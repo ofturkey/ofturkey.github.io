@@ -1,3 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".hamburger-btn .fa-times").hide();
+
+    $(".hamburger-btn .fa-bars").click(function(){
+      $(this).hide();
+      $(".hamburger-btn .fa-times").show();
+      $(".mob ul").addClass("active");
+    });
+
+    $(".hamburger-btn .fa-times").click(function(){
+      $(this).hide();
+      $(".hamburger-btn .fa-bars").show();
+      $(".mob ul").removeClass("active");
+    });
+    });
+  </script>
+</head>
+<body>
+  
+
+
+<div class="container">
+  <nav class="desk">
+    <ul>
+      <li class="active"><a href="./index.html">Anasayfa</a></li>
+      <li><a href="http://ofturkey.glitch.me">Ofturkey Kim?</a></li>
+      <li><a href="https://ofmobilegame.tk">OfMobile</a></li>
+      <li><a href="#">blog</a></li>
+      <li><a href="#">İletisim</a></li>
+    </ul>
+  </nav>
+  
+  <nav class="mob">
+    <div class="hamburger-btn">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+        <i class="fa fa-times" aria-hidden="true"></i>
+    </div>
+
+    <ul>
+        <li class="active"><a href="#">Anasayfa</a></li>
+      <li><a href="http://ofturkey.glitch.me">Ofturkey Kim?</a></li>
+      <li><a href="https://ofmobilegame.tk">Oyunlar</a></li>
+      <li><a href="#">blog</a></li>
+      <li><a href="#">İletisim</a></li>
+    </ul>
+  </nav>
+
+  <div class="header">
+  </div>
+
+</div> 
+
+
+</body>
+</html>
 <head>
   <link rel="stylesheet" href="style.css">
   <script data-ad-client="ca-pub-9491498064473012" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
